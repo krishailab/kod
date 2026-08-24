@@ -1,20 +1,33 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { 
+  Github, 
+  Slack, 
+  CreditCard, 
+  Database, 
+  Zap, 
+  Cloud, 
+  Triangle, 
+  Figma, 
+  ListTodo, 
+  FileText, 
+  Bot 
+} from "lucide-react";
 
 const integrations = [
-  { name: "GitHub", category: "Version Control" },
-  { name: "Slack", category: "Communication" },
-  { name: "Stripe", category: "Payments" },
-  { name: "PostgreSQL", category: "Database" },
-  { name: "Redis", category: "Cache" },
-  { name: "AWS", category: "Cloud" },
-  { name: "MongoDB", category: "Database" },
-  { name: "Vercel", category: "Hosting" },
-  { name: "Figma", category: "Design" },
-  { name: "Linear", category: "Project Management" },
-  { name: "Notion", category: "Documentation" },
-  { name: "OpenAI", category: "AI/ML" },
+  { name: "GitHub", category: "Version Control", Icon: Github },
+  { name: "Slack", category: "Communication", Icon: Slack },
+  { name: "Stripe", category: "Payments", Icon: CreditCard },
+  { name: "PostgreSQL", category: "Database", Icon: Database },
+  { name: "Redis", category: "Cache", Icon: Zap },
+  { name: "AWS", category: "Cloud", Icon: Cloud },
+  { name: "MongoDB", category: "Database", Icon: Database },
+  { name: "Vercel", category: "Hosting", Icon: Triangle },
+  { name: "Figma", category: "Design", Icon: Figma },
+  { name: "Linear", category: "Project Management", Icon: ListTodo },
+  { name: "Notion", category: "Documentation", Icon: FileText },
+  { name: "OpenAI", category: "AI/ML", Icon: Bot },
 ];
 
 export function IntegrationsSection() {
@@ -44,16 +57,16 @@ export function IntegrationsSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
-            Integrations
+            Our Technologies
             <span className="w-8 h-px bg-foreground/30" />
           </span>
           <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-6">
-            Works with everything
+            Powered by modern
             <br />
-            you already use.
+            tech stack.
           </h2>
           <p className="text-xl text-muted-foreground">
-            200+ pre-built integrations. Connect your entire stack in minutes.
+            We build robust, scalable applications using the most advanced technologies in the industry.
           </p>
         </div>
 
@@ -67,12 +80,17 @@ export function IntegrationsSection() {
               {integrations.map((integration) => (
                 <div
                   key={`${integration.name}-${setIndex}`}
-                  className="shrink-0 px-8 py-6 border border-foreground/10 hover:border-foreground/30 hover:bg-foreground/[0.02] transition-all duration-300 group"
+                  className="shrink-0 px-8 py-6 border border-foreground/10 hover:border-foreground/30 hover:bg-foreground/[0.02] transition-all duration-300 group flex items-center gap-4"
                 >
-                  <div className="text-lg font-medium group-hover:translate-x-1 transition-transform">
-                    {integration.name}
+                  <div className="p-3 bg-foreground/5 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                    <integration.Icon className="w-6 h-6 text-foreground/70 group-hover:text-foreground" />
                   </div>
-                  <div className="text-sm text-muted-foreground">{integration.category}</div>
+                  <div>
+                    <div className="text-lg font-medium group-hover:translate-x-1 transition-transform">
+                      {integration.name}
+                    </div>
+                    <div className="text-sm text-muted-foreground">{integration.category}</div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -88,12 +106,17 @@ export function IntegrationsSection() {
               {[...integrations].reverse().map((integration) => (
                 <div
                   key={`${integration.name}-reverse-${setIndex}`}
-                  className="shrink-0 px-8 py-6 border border-foreground/10 hover:border-foreground/30 hover:bg-foreground/[0.02] transition-all duration-300 group"
+                  className="shrink-0 px-8 py-6 border border-foreground/10 hover:border-foreground/30 hover:bg-foreground/[0.02] transition-all duration-300 group flex items-center gap-4"
                 >
-                  <div className="text-lg font-medium group-hover:translate-x-1 transition-transform">
-                    {integration.name}
+                  <div className="p-3 bg-foreground/5 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                    <integration.Icon className="w-6 h-6 text-foreground/70 group-hover:text-foreground" />
                   </div>
-                  <div className="text-sm text-muted-foreground">{integration.category}</div>
+                  <div>
+                    <div className="text-lg font-medium group-hover:translate-x-1 transition-transform">
+                      {integration.name}
+                    </div>
+                    <div className="text-sm text-muted-foreground">{integration.category}</div>
+                  </div>
                 </div>
               ))}
             </div>

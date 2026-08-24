@@ -4,32 +4,32 @@ import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    quote: "KodRish turned our idea into a clear, polished digital experience and stayed focused on the outcome.",
-    author: "Sarah Chen",
-    role: "CTO",
-    company: "Meridian Labs",
-    metric: "10x faster deployments",
-  },
-  {
-    quote: "The developer experience is unmatched. Our team's productivity has never been higher.",
-    author: "Marcus Webb",
-    role: "Engineering Lead",
-    company: "Flux Systems",
-    metric: "Clearer product direction",
-  },
-  {
-    quote: "Finally, infrastructure that scales with our ambition. Zero downtime since we switched.",
-    author: "Elena Rodriguez",
-    role: "VP Engineering",
-    company: "Beacon AI",
-    metric: "99.99% uptime",
-  },
-  {
-    quote: "The integrations are seamless. We connected our entire stack in a single afternoon.",
-    author: "James Liu",
+    quote: "KodRish transformed our manual processes into a seamless digital platform. Our local clients love the new experience.",
+    author: "Aarav Sharma",
     role: "Founder",
-    company: "Prism Analytics",
-    metric: "50+ integrations used",
+    company: "TechVeda Solutions",
+    metric: "3x faster onboarding",
+  },
+  {
+    quote: "They understood exactly what a small boutique business needs. The new e-commerce store is beautiful and incredibly fast.",
+    author: "Priya Desai",
+    role: "Managing Director",
+    company: "Nirman Retail",
+    metric: "45% increase in sales",
+  },
+  {
+    quote: "Working with KodRish gave us the technical edge we needed. We can now handle hundreds of student registrations without a glitch.",
+    author: "Rohan Gupta",
+    role: "Co-Founder",
+    company: "Vidyut EdTech",
+    metric: "Zero downtime admissions",
+  },
+  {
+    quote: "Affordable, transparent, and brilliant execution. They integrated our entire clinic management system in a matter of weeks.",
+    author: "Sneha Patel",
+    role: "Director",
+    company: "Aarogya Health",
+    metric: "100% automated bookings",
   },
 ];
 

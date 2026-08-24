@@ -35,11 +35,13 @@ export function MissionSection() {
               We believe that powerful technology shouldn't be complicated to use. Our mission is to demystify digital transformation by building solutions that are both technologically advanced and intuitively designed.
             </p>
           </div>
-          <div className="relative aspect-square lg:aspect-auto bg-foreground/10 rounded-2xl overflow-hidden flex items-center justify-center">
-             <div className="text-foreground/30 font-mono text-center px-6">
-                Innovation through Simplicity<br />
-                <span className="text-xs opacity-50 block mt-2">Core Principle</span>
-             </div>
+          <div className="relative aspect-square lg:aspect-auto bg-foreground/10 rounded-2xl overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" 
+              alt="Technology bridging the gap" 
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-tr from-background/80 to-transparent" />
           </div>
         </div>
       </div>
