@@ -35,7 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const certificates = await db.collection("certificates").find({}).toArray();
     
     certificateRoutes = certificates.map((cert) => ({
-      url: `${baseUrl}/verify/${cert.credentialId}`,
+      url: `${baseUrl}/credential/${cert.credentialId}`,
       lastModified: new Date(cert.issueDate || Date.now()),
       changeFrequency: 'yearly' as const,
       priority: 0.6,
