@@ -1,0 +1,21 @@
+# KodRish Innovation & Solutions
+> Digital Service Provider
+
+## About
+KodRish Innovation & Solutions is a leading technology agency that delivers high-performance web development, intuitive UI/UX design, cutting-edge AI/ML solutions, and scalable cloud services. We specialize in transforming complex technology into seamless digital experiences for startups and enterprises.
+
+## Core Capabilities
+- Web & App Development (React, Next.js, Node.js)
+- UI/UX Design (Figma, TailwindCSS, Framer Motion)
+- AI & Machine Learning (Python, FastAPI, OpenAI Integration)
+- Cloud Infrastructure (AWS, Vercel, MongoDB, PostgreSQL)
+- Data Analytics (Power BI)
+
+## Leadership
+- Krish Bhagat (Founder & CEO/Executive Lead)
+- Shivam Patel (Python Developer & Data Science)
+
+## Contact & Links
+- Official Website: https://www.kodrish.me
+- LinkedIn: https://in.linkedin.com/company/kodrish-innovation-solutions
+- Instagram: https://www.instagram.com/kod_rish/

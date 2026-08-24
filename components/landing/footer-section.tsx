@@ -25,9 +25,8 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: "Twitter", href: "#" },
-  { name: "GitHub", href: "#" },
-  { name: "LinkedIn", href: "#" },
+  { name: "Instagram", href: "https://www.instagram.com/kod_rish/" },
+  { name: "LinkedIn", href: "https://in.linkedin.com/company/kodrish-innovation-solutions" },
 ];
 
 export function FooterSection() {

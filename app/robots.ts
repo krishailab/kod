@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin', '/admin/'],
     },
-    sitemap: 'https://kodrish.me/sitemap.xml',
+    sitemap: 'https://www.kodrish.me/sitemap.xml',
   }
 }
